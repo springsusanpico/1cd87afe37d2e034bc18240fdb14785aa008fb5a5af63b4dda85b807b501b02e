@@ -1,0 +1,12 @@
+{
+  "name": "dns-lookup-4ad2f6",
+  "version": "1.0.0",
+  "description": "A dns-lookup utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["dns-lookup", "utility"],
+  "license": "MIT"
+}
